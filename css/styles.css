@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-size: 1.125rem;
+    letter-spacing: 1px;
     font-family: 'Raleway', sans-serif;
     background: #293f50;
     color: #888;
@@ -141,5 +142,59 @@ body {
         padding-top: 24px;
         line-height: 1.2;
         font-size: 2.5rem;
+    }
+}
+
+.hero {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.hero h2,
+.hero p {
+    line-height: 1.4;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.hero h2 {
+    color: #648880;
+    text-transform: capitalize;
+    margin: 10px 20px;
+}
+
+.hero p {
+    margin: 0 20px 50px;
+}
+
+.btn-hero {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: #293f50;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: -10px 0;
+    padding: 20px 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button.btn-hero:hover,
+button.btn-hero:focus {
+    color: #648880;
+    background: #fff;
+    transition:  all .5s;
+}
+
+
+@media (min-width: 700px) {
+    .hero {
+        max-width: 100vw;
+        margin-top: -6em;
+    }
+
+    .btn-hero {
+        padding: 25px 35px;
     }
 }
