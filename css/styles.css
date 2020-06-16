@@ -320,3 +320,56 @@ footer {
     }
 }
 
+.hero-speakers {
+    text-align: center;
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);;
+}
+
+.hero-speakers h1 {
+    font-size: 1.9rem;
+    font-weight: 100;
+    letter-spacing: -1px;
+    color: #648880;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+.hero-speakers p {
+    font-size: 1.1rem;
+    font-weight: 100;
+    padding-bottom: 30px;    
+}
+
+.content {
+    display: grid;
+    margin: 0 30px;
+    line-height: 1.4;
+}
+
+@media (min-width: 699px) {
+    .speakers {
+        height: 25vh;
+    }
+
+    .content {
+     padding-left: 40px;
+     padding-right: 40px;
+    }
+
+    .hero-speakers h1 {
+        font-size: 2rem;
+    }
+
+    .hero-speakers p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1084px) {
+    .content {
+        display: grid;
+        margin: auto;
+        width: 960px;
+    }
+}
