@@ -280,4 +280,43 @@ img {
 }
 
 
+footer {
+    text-align: center;    
+}
+
+.nav-footer ul {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav-footer li {
+    margin: 0 10px;
+    display: inline;
+    list-style: none;
+}
+
+.nav-footer a {
+    font-size: .85rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-footer a:hover {
+    color: #648880;
+}
+
+@media (min-width: 580px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, 1fr 1fr);
+    }
+
+    .nav-footer ul {
+       padding: 20px 0;
+    }
+
+    .nav-footer li {
+        margin: 0 15px;
+    }
+}
 
