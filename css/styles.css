@@ -13,14 +13,17 @@ body {
 }
 
 .logo {
+    border-top: 4px solid #648880;
     font-weight: 100;
-    text-align: center;
-    text-transform: uppercase;
+    text-align: center; 
+    letter-spacing: -1px; 
 }
 
 .logo a {
+    font-size: 3rem;
     color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .logo a:hover,
@@ -321,9 +324,16 @@ footer {
     }
 }
 
+/* speakers */
+
+.speakers {
+    margin-bottom: 35px;
+}
+
 .hero-speakers {
     text-align: center;
     background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    
 }
 
 .hero-speakers h1 {
@@ -344,8 +354,8 @@ footer {
 
 .content {
     display: grid;
-    margin: 0 30px;
     line-height: 1.4;
+    padding: 20px;
 }
 
 @media (min-width: 699px) {
@@ -530,4 +540,147 @@ div .about {
 
 footer {
     padding: 15px;
+}
+
+small {
+    font-size: .85rem;
+}
+
+/* schedule */
+
+.schedule {
+    margin-bottom: -80px;
+}
+
+.hero-schedule {
+    text-align: center;
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+}
+
+.hero-schedule h1 {
+    font-size: 1.9rem;
+    font-weight: 100;
+    letter-spacing: -1px;
+    color: #648880;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+.hero-schedule p {
+    font-size: 1.1rem;
+    font-weight: 100;
+    padding-bottom: 30px;    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #fff;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 1rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    color: #648880;
+    border: 1px solid #fff;
+}
+
+time {
+    font-size: .85rem;
+    font-weight: 400;
+    color: #a9b2b9;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    
+}
+
+td {
+    font-size: .80rem;
+    font-weight: 100;
+    padding: 10px;
+    width: 40%;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #648880;
+}
+
+a {
+    font-size: .85rem;
+    color: #888;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+@media (min-width: 360px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    tr {
+        border-bottom: 1px solid #dfe2e5;
+    }
+
+    td {
+        padding: 15px;
+    }
+
+    a {
+        font-size: .75rem;
+    }
+
+    h4 {
+        margin: 0;
+        padding-bottom: 5px;
+    }
+
+    h4,
+    th {
+        font-size: .95rem;
+    }
+
+    time {
+        font-size: .80rem;
+    }
+}
+
+@media (min-width: 680px) {
+    h4,
+    th {
+        font-size: 1.2rem;
+    }
+
+    td {
+        padding: 20px 0;
+    }
+
+    td,
+    time,
+    a {
+        font-size: .95rem;
+    }
+
+    .container {
+        padding: 20px 100px;    
+    }
+}
+
+@media (min-width: 925px) {
+    .container {
+        padding: 20px 200px;
+    }
 }
