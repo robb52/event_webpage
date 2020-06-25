@@ -330,8 +330,7 @@ footer {
 
 .hero-speakers {
     text-align: center;
-    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
-    
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);    
 }
 
 .hero-speakers h1 {
@@ -609,6 +608,7 @@ h4 {
     font-size: 1rem;
     font-weight: 100;
     color: #648880;
+    text-transform: capitalize;
 }
 
 a {
@@ -684,6 +684,10 @@ a {
 
 /* venue */
 
+.content {
+    margin-bottom: -25px;
+}
+
 .hero-venue {
     text-align: center;
     background: linear-gradient(to right, #a1d3b0, #f6f1d3);
@@ -711,6 +715,7 @@ a {
     text-align: center;
     letter-spacing: -1px;
     background: #fff;
+    padding: 1em 0;
 }
 
 .map,
@@ -797,3 +802,159 @@ a:hover {
        padding-left: 30%;   
     }
 }
+
+/* register */
+
+.hero-register {
+    text-align: center;
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    padding: 2.5em 2em;
+}
+
+.hero-register h1 {
+    font-size: 1.9rem;
+    font-weight: 100;
+    letter-spacing: -1px;
+    color: #648880;
+    margin: 30px 0;
+}
+
+.hero-register p {
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.main-register {
+    background: #fff;
+}
+
+.register-info h2 {
+    font-weight: 100;
+}
+
+.register-info h4 {
+    font-size: 1.125rem;
+    text-transform: capitalize;
+}
+
+.register-info h5 {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #a9b2b9;
+}
+
+.register-info p {
+    padding: 0 10px
+}
+
+ul {
+    list-style: square;
+}
+
+.register-info {
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-align: center;
+    padding: 1em 1.5em;
+    letter-spacing: -.80px;
+    line-height: 1.3;
+}
+
+.register-form {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 3em 2em 3em;
+    
+}
+
+label {
+    font-size: 1rem;
+    color: #648880;
+    padding: 10px 0;
+}
+
+input,
+.btn {
+    font-size: 1rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+input {
+    padding: 5px 8px;
+}
+
+select {
+    width: 20%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    border-radius: 5px;
+    height: 4em;
+}
+
+.btn {
+    margin: 1em 0;
+    padding: 10px;
+    background: #648880;
+    color: #fff; 
+    cursor: pointer; 
+}
+
+.btn:hover,
+.btn:focus {
+    background: #648880;
+    opacity: 0.9;
+    transition: ease-in-out 5ms;
+}
+
+@media (min-width: 570px) {
+    .hero-register {
+        margin-top: -80px;
+    }
+
+    main {
+        margin: 0;
+        background-color: #fff;
+        padding: 0 1em;
+    }
+
+    .register {
+        display: grid;
+        grid-template-columns:  1fr 40%;
+    }
+
+    .register-info {
+        text-align: left;
+        padding-left: 3em;
+    }
+}
+
+@media (min-width: 980px) {
+    .register-info,
+    .register-form {
+        padding: 1em 5em;
+    }
+
+    main {
+        padding: 0 4em;
+    }
+}
+
+@media (min-width: 1140px) {
+    .register-info {
+        padding-left: 5em;
+        margin-right: -30px;
+    }
+    
+    
+}
+
+
